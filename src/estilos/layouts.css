@@ -1,0 +1,54 @@
+
+/* ---- NavBar----- */
+.navbar {
+    background-color: rgb(245, 246, 247, 0.9);
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: rgb(110, 110, 110);
+    font-weight: 600;
+}
+
+.navbar .container-fluid{ 
+    margin: 0 auto;
+    padding: 0% 3%; 
+}
+
+.nav-item .nav-link.active,.nav-link:hover, .nav-link:focus{
+    color: rgb(150, 185, 39);     
+}
+
+.nav-link:hover, .nav-link:active {
+    border: none;    
+}
+
+.navbar .navbar-nav .nav-item .nav-link{
+    transition: all 0.1s linear;
+}
+
+
+
+
+
+/* --- FOOTER --- */
+
+.footer {
+    background-color: rgb(50, 52, 0);
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    
+    text-align: center;  
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+footer .sociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+  

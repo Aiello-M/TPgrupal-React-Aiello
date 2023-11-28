@@ -1,0 +1,215 @@
+
+/* --- HEADER --- */
+
+/* Fondo imagen */
+#home .header { background-image: url('../assets/imgInicio.jpg');}
+#about .header { background-image: url('../assets/imgAbout.jpg');}
+#contact .header { background-image: url('../assets/ImgContact1.jpg'); height: 150vh;}
+
+.header {
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-color: black;
+    filter: brightness(0.80);
+
+    padding: 0;
+    margin-right: 5%;
+    padding-top: 57vh;
+}
+
+
+/* Estilo encabezados*/
+.header .header1 {
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: rgb(245, 246, 247, 0.9);
+    font-style: italic;
+    font-size: 5rem;
+    text-align: right;   
+}
+
+.header em {
+    color:rgb(138, 137, 14, 0.9);
+    font-weight: bold;
+}
+
+.header .header2{
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color:rgb(245, 246, 247, 0.9);
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: right;
+}
+
+#contact .header2, #contact .header1{
+    text-align: center;
+}
+
+/* Responsive*/
+@media (max-width: 990px){
+    .header .header1 {
+        font-size:4rem ;
+}}
+
+@media (max-width: 900px){
+    .header .header1 {
+        font-size:3.2rem ;
+        text-align: center;
+    } 
+    .header .header2 {
+        font-size:1.5rem ;
+        text-align: center;
+    }
+    .header{
+        padding-top: 62vh;
+    }
+}
+
+
+
+
+/*  --- TITULOS SECCION --- */
+.section .titles{
+    width: 75%;
+    max-width:1600px;
+    margin: 5rem auto;
+}
+
+.title, .subtitle{
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    line-height:1.3;      
+    margin-bottom: 0.5rem;
+}
+
+.section .title {
+    font-size: calc(1.325rem + 0.9vw);
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+}
+
+.section .subtitle {
+    font-size: calc(0.7rem + 0.6vw);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+
+
+
+/*  --- CARD OurFood--- */
+#about .card-group{
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+    width: 73%;
+    max-width:300px;
+}
+
+#about .col{
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 768px){
+    #about .col{
+        padding-bottom: 2rem;
+    }
+
+    #about .card-group{
+        width: 100%;
+        width: 75%;
+        max-width:75%;
+    }   
+}
+
+
+/* Efecto hover en cards */
+#about .card{
+    box-shadow: 0 1px 1px rgb(0,0,0,0.2);
+    transition: all 0.25s;
+}
+#about .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgb(0,0,0,0.2);
+}
+
+
+/* Texto card*/
+#about .card-body{
+    padding-top: 1.5rem;
+    padding-bottom: 0.3rem;
+}
+
+#about .card-body h5{
+    padding-top: 0.4rem;
+    padding-bottom: 0.5rem;
+}
+
+#about .card-body p{
+    font-size:12.5px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+
+/* Botonones card */
+#about .btn-success{
+    font-weight:bold;
+    padding: 3px 5px 3px 5px;
+}
+
+
+
+
+
+
+
+/*  --- FORMULARIO CONTACTO --- */
+
+#contact .container-fluid{
+    width: 70%;
+    padding-bottom: 1rem;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    #contact .container-fluid{
+        width:68%;
+}}
+
+@media (min-width: 992px){
+    #contact .container-fluid{
+        width:50%;
+}}
+
+
+#contact p{
+    font-size:1.2em;
+    color: white;
+    padding-left: 1rem;
+}
+
+/* Boton del formulario*/
+#contact .btn-enviar{
+    background: rgb(150, 201, 62);
+    color: white;
+    font-size: 1.1em;
+    font-weight: 500;
+    width: 100%;
+    transition: .2s ease-in-out all;
+}
+
+#contact .btn-enviar:hover{
+    background-color: rgb(111, 149, 46);
+}
+
+#contact .btn-enviar:active{
+    background-color: rgb(111, 149, 46);
+    box-shadow: 0 0 0 3px rgb(150, 201, 62, 0.5);
+    text-shadow: 0 0 1px white;
+}
+
+
